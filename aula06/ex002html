@@ -21,8 +21,6 @@
     <p>Já me livrei da maldição</p>
 
     <script>
-        window.alert('Minha primeira mensagem!') //Manda uma mensagem de alerta apenas com ok para fechar
-        window.confirm('Está gostando de JS?') //manda mensagem com botão ok e cancelar
         window.prompt('Qual é seu nome?') //vai perguntar o nome
     </script>
 </body>
