@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09</title>
+</head>
+
+<body>
+    <p>Qual seu País?</p>
+    <input type="text" name="pais" id="idpais">
+    <input type="button" value="Enviar" onclick="enviarfor()">
+    <div class="resposta"></div>
+
+    <script>
+
+        function enviarfor() {
+            var nac = window.document.getElementById('idpais')
+            var resposta = nac.value
+            var resultado = window.document.querySelector('div.resposta')
+            resultado.innerHTML = `<p><strong>${resposta}</strong></p>`
+
+            if(resposta != 'brasil'){
+                resultado.innerHTML += `Você é estrangeiro`
+            }else{
+                resultado.innerHTML += `Você é brasileiro`
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>
