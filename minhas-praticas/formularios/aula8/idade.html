@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculando a idade</h1>
+
+    <form action="idade.js" method="get" autocomplete="off">
+        
+        <div>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" oninput="calcular()">
+        </div>
+
+        <div>
+            <label for="iidades">Sua idade é:</label>
+            <output id="iidade"></output>
+        </div>
+        
+        <div>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </div>
+    </form>
+
+    <script>
+        function calcular(){
+        var atual = new Date().getFullYear()
+        var ano = document.querySelector('#iano')
+        var idade = document.getElementById('iidade')
+
+            idade.innerHTML = atual - ano.value
+
+        }
+        var soma = document.getElementById('iidade').value
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+
+    <form action="dados.js" method="post">
+        
+        <div>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </div>
+
+        <div>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel">
+        </div>
+
+        <div>
+            <labe for="ifoto">Enviar foto</labe>
+            <input type="file" name="foto" id="ifoto">
+        </div>
+        
+        <div>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </div>
+    </form>
+</body>
+</html>

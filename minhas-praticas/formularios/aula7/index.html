@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="dados.php" method="get" autocomplete="on">
+
+        <div>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---Escolha um Estado---</option>
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="AC">Acre</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="TEC">Técnico</option>
+                <option value="ADM">Administrador</option>
+                <option value="DEV"> Desenvolvedor</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="RESETAR">
+        </div>
+
+    </form>
+</body>
+</html>
