@@ -1,11 +1,10 @@
 function carregar(){
-    var msg = window.document.querySelector('div#msg')
-    var img = window.document.querySelector('div#foto')
+    var msg = window.document.querySelector('#msg')
+    var img = window.document.querySelector('#imagem')
     var data = new Date()
     var hora = data.getHours()
     var minutos = data.getMinutes()
     msg.innerHTML = `Agora são ${hora}:${minutos}`
-
     if (hora >= 0 && hora <12){
         img.src = 'images/manha.webp'
         document.body.style.background = '#f2e9d1'
