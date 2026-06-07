@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faixa Etário Jiu-jitsu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Classificador de Faixa Etário Jiu-jitsu</h1>
+
+    <section id="container">
+        <div id="form">
+            <form action="bdsimulation.js" method="get">
+                <div>
+                    Ano de Nascimento:
+                    <input type="number" name="ano" id="iano"> <br>
+                    Sexo:
+                    <input type="radio" name="sexo" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="sexo" id="fem">
+                    <label for="fem">Feminino</label> <br>
+                    <input type="button" value="Validar" id="botao" onclick="validar()">
+                </div>
+            </form> 
+        </div>
+        <div id="msg">
+            Preencha os dados para verificar
+
+        </div>
+
+    </section>
+    
+    <footer>&copy; Jonathan Carlos</footer>
+
+    <script src="cd.js"></script>
+</body>
+</html>
