@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(0, 140, 255);
+    font: normal 15px Arial;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+
+}
+
+#res{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 100px 1 0;
+    align-items: center;
+    padding: 20px;
+
+        #iano{
+            width: 100px;
+        }
+
+        fieldset{
+            width: 200px;
+    }
+}
+#btn{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100px;
+    align-self: center;
+    border: none;
+    background-color: gray;
+    border-radius: 6px;
+    color: white;
+    display: none;
+
+        &:hover{
+            background-color: green;
+            color: white;
+    }
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+}
